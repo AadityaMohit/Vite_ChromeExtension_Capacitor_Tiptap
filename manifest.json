@@ -2,5 +2,29 @@
   "manifest_version": 3,
   "name": "CRXJS React Vite Example",
   "version": "1.0.0",
-  "action": { "default_popup": "index.html" }
+  "description": "Displays content in a sidebar",
+  "permissions": [
+    "sidePanel",
+    "tabs",
+    "activeTab"
+  ],
+  "action": {
+    "default_title": "Click to open sidebar"
+  },
+  "side_panel": {
+    "default_path": "index.html",
+    "openPanelOnActionClick": true
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["**/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }

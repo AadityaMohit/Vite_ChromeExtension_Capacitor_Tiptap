@@ -1,10 +1,18 @@
- import React from 'react';
-import TiptapEditor from './Components/TiptapEditor';
- 
+import logo from './logo.svg';
+import './App.css';
+import Home from './Components/Home';
+
 function App() {
   return (
-    <div style={{ padding: '20px' }}>
-      <TiptapEditor />
+    <div className="App">
+      
+
+<Home/> 
+
+
+
+
+
     </div>
   );
 }
