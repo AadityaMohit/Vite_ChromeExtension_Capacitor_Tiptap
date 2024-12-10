@@ -9,7 +9,7 @@
     "activeTab"
   ],
   "action": {
-    "default_title": "Click to open sidebar"
+    "default_popup": "popup.html"
   },
   "side_panel": {
     "default_path": "index.html",
